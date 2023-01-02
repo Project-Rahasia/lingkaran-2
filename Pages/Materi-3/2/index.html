@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="/Asset/Image/circle.png"
+      type="image/x-icon"
+    />
+
+    <!-- Memanggil Bootstrap CSS -->
+    <link rel="stylesheet" href="/Asset/Bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Memanggil CSS -->
+    <link rel="stylesheet" href="/Asset/CSS/Course.css" />
+
+    <title>Latihan</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav"></nav>
+
+    <!-- Navbar Bottom -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      id="nav-bottom"
+    ></nav>
+
+    <!-- Membuat Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb-header">
+      <ol class="breadcrumb container">
+        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+        <li class="breadcrumb-item">
+          <a href="/Pages/Materi-2/0/">Luas Lingkaran</a>
+        </li>
+        <li class="breadcrumb-item active">Latihan</li>
+      </ol>
+    </nav>
+    <!-- End Breadcrumb -->
+
+    <!-- Main Content -->
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12">
+          <div class="list-course"></div>
+        </div>
+
+        <div class="col-lg-9 col-sm-12">
+          <div class="card card-body">
+            <!-- Start Course -->
+            <h1>Latihan</h1>
+            <div class="card my-3">
+              <div class="card-body course">
+                <h6>Petunjuk</h6>
+                <ol>
+                  <li>
+                    Isilah titik-titik di bawah ini dengan jawaban yang benar.
+                  </li>
+                  <li>
+                    Tekan tombol
+                    <span class="btn btn-sm btn-success">Periksa</span> untuk
+                    mengecek jawaban.
+                  </li>
+                  <li>
+                    Apabila jawaban benar tombol
+                    <span class="btn btn-sm btn-danger">Soal Selanjutnya</span>
+                    akan aktif, dan anda dapat berpindah ke soal berikutnya.
+                  </li>
+                  <li>Apabila jawaban berkoma gunakan tanda titik(<b>.</b>)</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="excercise">
+              <div class="tab-content" id="content-1">
+                <h5>Soal 1</h5>
+                <p>Tentukanlah panjang diameter lingkaran berikut:</p>
+                <div class="my-1">
+                  <p>
+                    a. Hitunglah panjang diameter $\overline{GH}$ jika diketahui
+                    luas lingkaran tersebut adalah $113.04 cm^2$! <br /><img
+                      src="./img/soal-1-a.png"
+                    />
+                  </p>
+                  <span><b>Jawab:</b></span> $d = $
+                  <input
+                    type="text"
+                    placeholder="...."
+                    class="form-control input-course user-answer-1"
+                    autocomplete="off"
+                  />
+                  cm
+                </div>
+
+                <div class="my-1">
+                  <p>
+                    b. Hitunglah panjang diameter $\overline{EF}$ jika diketahui
+                    luas lingkaran tersebut adalah $50.24 cm^2$! <br /><img
+                      src="./img/soal-1-b.png"
+                    />
+                  </p>
+                  <span><b>Jawab:</b></span> $d = $
+                  <input
+                    type="text"
+                    placeholder="...."
+                    class="form-control input-course user-answer-1"
+                    autocomplete="off"
+                  />
+                  cm
+                </div>
+
+                <p id="message-1"></p>
+                <div class="my-2">
+                  <button class="btn btn-sm btn-success" id="check-1">
+                    Periksa
+                  </button>
+                  <button class="btn btn-sm btn-danger nextSoal disabled">
+                    Soal Selanjutnya
+                  </button>
+                </div>
+              </div>
+
+              <div class="tab-content" id="content-2">
+                <h5>Soal 2</h5>
+                <p>Tentukanlah luas lingkaran berikut:</p>
+                <div class="my-1">
+                  <p>
+                    a. Hitunglah luas lingkaran pada gambar di bawah jika
+                    diketahui panjang diameternya adalah 14 cm! <br /><img
+                      src="./img/soal-2-a.png"
+                    />
+                  </p>
+                  <span><b>Jawab:</b> $L = $</span>
+                  <input
+                    type="text"
+                    placeholder="...."
+                    class="form-control input-course user-answer-2"
+                    autocomplete="off"
+                  />
+                  $cm^2$
+                </div>
+
+                <div class="my-1">
+                  <p>
+                    b. Hitunglah luas lingkaran pada gambar di bawah jika
+                    diketahui panjang jari-jarinya adalah 21 cm! <br /><img
+                      src="./img/soal-2-b.png"
+                    />
+                  </p>
+                  <span><b>Jawab:</b></span> $L = $
+                  <input
+                    type="text"
+                    placeholder="...."
+                    class="form-control input-course user-answer-2"
+                    autocomplete="off"
+                  />
+                  $cm^2$
+                </div>
+
+                <p id="message-2"></p>
+                <div class="my-2">
+                  <button class="btn btn-sm btn-success" id="check-2">
+                    Periksa
+                  </button>
+                  <button class="btn btn-sm btn-danger nextSoal disabled">
+                    Soal Selanjutnya
+                  </button>
+                </div>
+              </div>
+
+              <div class="tab-content" id="content-3">
+                <h5>Soal 3</h5>
+                <p>3. Tentukanlah panjang jari - jari berikut!</p>
+                <div class="my-1">
+                  <p>
+                    a. Sebuah lingkaran O memiliki luas sebesar $28.26 cm^2$.
+                    Berapakah panjang jari - jari $\overline{OJ}$ pada lingkaran
+                    tersebut? <br /><img src="./img/soal-3-a.png" />
+                  </p>
+                  <span><b>Jawab:</b> $r = $</span>
+                  <input
+                    type="text"
+                    placeholder="...."
+                    class="form-control input-course user-answer-3"
+                    autocomplete="off"
+                  />
+                  cm
+                </div>
+
+                <div class="my-1">
+                  <p>
+                    b. Sebuah lingkaran P memiliki luas sebesar $78.5 cm^2$.
+                    Berapakah panjang jari - jari $\overline{PQ}$ pada lingkaran
+                    tersebut? <br /><img src="./img/soal-3-b.png" />
+                  </p>
+                  <span><b>Jawab:</b> $r = $</span>
+                  <input
+                    type="text"
+                    placeholder="...."
+                    class="form-control input-course user-answer-3"
+                    autocomplete="off"
+                  />
+                  cm
+                </div>
+
+                <p id="message-3"></p>
+                <div class="my-2">
+                  <button class="btn btn-sm btn-success" id="check-3">
+                    Periksa
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Course -->
+            <hr />
+            <div class="row web">
+              <div class="col-lg-6 col-sm-12">
+                <a
+                  href="/Pages/Materi-3/1/"
+                  class="btn btn-sm btn-outline-dark"
+                  id="back"
+                  ><i class="fas fa-chevron-left"></i> Sebelumnya</a
+                >
+              </div>
+              <div class="col-lg-6 col-sm-12 text-end">
+                <a
+                  href="/Pages/Materi-3/3/"
+                  class="btn btn-sm btn-dark"
+                  id="next"
+                  >Selanjutnya <i class="fas fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="d-grid gap-2">
+                <a
+                  href="/Pages/Materi-3/1/"
+                  class="btn btn-sm btn-outline-dark"
+                  id="back"
+                  ><i class="fas fa-chevron-left"></i> Sebelumnya</a
+                >
+                <a
+                  href="/Pages/Materi-3/3/"
+                  class="btn btn-sm btn-dark"
+                  id="next"
+                  >Selanjutnya <i class="fas fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <p class="text-center">&copy; 2021 Media Pembelajaran Lingkaran</p>
+      </div>
+    </section>
+
+    <!-- Memanggil file Component JS -->
+    <script src="/components/navbar.js"></script>
+    <script src="/components/list-course.js"></script>
+    <script src="/components/list-course-responsive.js"></script>
+
+    <!-- Mathjax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+    ></script>
+
+    <!-- Memanggil Bootstrap JS -->
+    <script src="/Asset/Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Memanggil file script JS -->
+    <script src="/Pages/Materi-3/2/script.js"></script>
+  </body>
+</html>

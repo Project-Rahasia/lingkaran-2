@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="/Asset/Image/Logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- Memanggil Bootstrap CSS -->
+    <link rel="stylesheet" href="/Asset/Bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Memanggil CSS -->
+    <link rel="stylesheet" href="/Asset/CSS/Course.css" />
+
+    <title>Kuis Lingkaran</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav"></nav>
+
+    <!-- Navbar Bottom -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      id="nav-bottom"
+    ></nav>
+
+    <!-- Membuat Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb-header">
+      <ol class="breadcrumb container">
+        <li class="breadcrumb-item">Bagian-Bagian Lingkaran</li>
+        <li class="breadcrumb-item active" style="font-weight: bold">Kuis</li>
+      </ol>
+    </nav>
+    <!-- End Breadcrumb -->
+
+    <!-- Main Content -->
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12">
+          <div class="list-course"></div>
+        </div>
+
+        <div class="col-lg-9 col-sm-12">
+          <div class="card card-body">
+            <!-- Start Course -->
+            <h1>Kuis</h1>
+
+            <p>
+              Kuis ini bertujuan untuk menguji pengetahuan tentang materi yang
+              telah dipelajari di modul ini.
+            </p>
+
+            <h5>Autran</h5>
+
+            <div class="course">
+              <ul>
+                <li>
+                  Terdapat 10 pertanyaan yang harus dikerjakan dalam kuis ini
+                </li>
+                <li>Pilihlah dengan jawaban yang benar.</li>
+                <li>
+                  Tekan tombol
+                  <span class="btn btn-sm btn-success">Selanjutnya</span> untuk
+                  berpindah kesoal selanjutnya.
+                </li>
+                <li>
+                  Tekan tombol
+                  <span class="btn btn-sm btn-secondary">Sebelumnya</span> untuk
+                  berpindah kesoal sebelumnya.
+                </li>
+                <li>
+                  Tekan tombol
+                  <span class="btn btn-sm btn-danger">Selesai</span> untuk
+                  mengakhiri menjawab soal, halaman akan menampilkan nilai.
+                </li>
+              </ul>
+            </div>
+
+            <p>Selamat Mengerjakan!</p>
+            <div class="col-lg-7">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  id="nama"
+                  placeholder="Nama Lengkap"
+                  class="form-control"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="nama" class="form-label">Kelas</label>
+                <input
+                  type="text"
+                  id="kelas"
+                  placeholder="Kelas"
+                  class="form-control"
+                  autocomplete="off"
+                />
+              </div>
+              <button
+                type="button"
+                id="start"
+                class="btn btn-md btn-primary py-1 px-4"
+              >
+                Mulai
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <p class="text-center">&copy; 2021 Media Pembelajaran Lingkaran</p>
+      </div>
+    </section>
+
+    <!-- Memanggil file Component JS -->
+    <script src="/components/navbar.js"></script>
+    <script src="/components/list-course.js"></script>
+    <script src="/components/list-course-responsive.js"></script>
+
+    <!-- Mathjax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+    <!-- Memanggil Bootstrap JS -->
+    <script src="/Asset/Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const nama = document.getElementById("nama");
+      const kelas = document.getElementById("kelas");
+      const start = document.getElementById("start");
+
+      start.addEventListener("click", () => {
+        if (nama.value === "" || kelas.value === "") {
+          alert("Data yang di isi belum lengkap");
+        } else {
+          var now = Date.now();
+          sessionStorage.setItem("nama", nama.value);
+          sessionStorage.setItem("kelas", kelas.value);
+          sessionStorage.setItem("timer-1", now);
+          location.href = "./quiz.html";
+        }
+      });
+    </script>
+  </body>
+</html>

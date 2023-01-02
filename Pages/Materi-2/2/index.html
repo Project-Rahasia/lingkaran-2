@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="/Asset/Image/Logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- Memanggil Bootstrap CSS -->
+    <link rel="stylesheet" href="/Asset/Bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Memanggil CSS -->
+    <link rel="stylesheet" href="/Asset/CSS/Course.css" />
+
+    <title>Menemukan Rumus Keliling Lingkaran</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav"></nav>
+
+		 <!-- Navbar Bottom -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      id="nav-bottom"
+    ></nav>
+
+    <!-- Membuat Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb-header">
+      <ol class="breadcrumb container">
+        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+        <li class="breadcrumb-item">
+          <a href="/Pages/Materi-2/0/">Keliling Lingkaran</a>
+        </li>
+        <li class="breadcrumb-item active">
+          Menemukan Rumus Keliling Lingkaran
+        </li>
+      </ol>
+    </nav>
+    <!-- End Breadcrumb -->
+
+    <!-- Main Content -->
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12">
+          <div class="list-course"></div>
+        </div>
+				<div class="col-lg-9 col-sm-12">
+					<div class="card card-body">
+							<!-- Start Course -->
+						<h1>Menemukan Rumus Keliling Lingkaran</h1>
+						<hr>
+						<p>Lalu bagaimana cara menemukan keliling lingkaran agar lebih praktis? Agar perhitungan keliling lebih praktis, kita dapat menggunakan rumus untuk menghitungnya. Rumus keliling lingkaran dapat diketahui berdasarkan hubungan antara  keliling dan diameter lingkaran.</p>
+
+						<p>Untuk mengetahui hubungan antara keliling dan diameter lingkaran, lakukan kegiatan berikut dengan seksama.</p>
+
+						<p>1) Perhatikan gambar lingkaran di bawah ini!</p>
+
+						<d class="text-danger">Gambar</d>
+
+						<p>2)	Masukkan diameter lingkaran yang berbeda sebanyak 4 buah sesuai dengan kolom diameter pada tabel di bawah ini!</p>
+						<div class="latihan">
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr class="text-center">
+											<th>Lingkaran Ke-</th>
+											<th>Diameter $(d)$</th>
+											<th>Keliling $(K)$</th>
+											<th>$\frac{K}{d}$</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="text-center">
+											<td>$C_{1}$</td>
+											<td>4</td>
+											<td><input type="text" class="form-control keliling" placeholder="...."></td>
+											<td><input type="text" class="form-control perbandingan" placeholder="...."></td>
+										</tr>
+										<tr class="text-center">
+											<td>$C_{2}$</td>
+											<td>6</td>
+											<td><input type="text" class="form-control keliling" placeholder="...."></td>
+											<td><input type="text" class="form-control perbandingan" placeholder="...."></td>
+										</tr>
+										<tr class="text-center">
+											<td>$C_{3}$</td>
+											<td>8</td>
+											<td><input type="text" class="form-control keliling" placeholder="...."></td>
+											<td><input type="text" class="form-control perbandingan" placeholder="...."></td>
+										</tr>
+										<tr class="text-center">
+											<td>$C_{4}$</td>
+											<td>10</td>
+											<td><input type="text" class="form-control keliling" placeholder="...."></td>
+											<td><input type="text" class="form-control perbandingan" placeholder="...."></td>
+										</tr>
+									</tbody>
+								</table>
+
+								<button id="check-answer" class="btn btn-md btn-success">Cek Jawaban</button>
+							</div>
+
+							<p>3)	Setelah memasukkan nilai diameter sesuai dengan kolom tabel di atas, kemudian geser titik slider untuk mengetahui nilai dari keliling lingkaran tersebut.</p>
+
+							<p>4)	Selanjutnya masukkan nilai keliling yang kamu dapat pada kolom tabel keliling sesuai dengan nilai diameternya.</p>
+
+							<p>5)	Kemudian hitunglah dan masukkan berapa nilai perbandingan keliling dan diameter.</p>
+
+							<b>Pertanyaan:</b>
+							<div class="course">
+								<ol>
+									<li>Berapa hasil dari $\frac{K}{d}$ untuk setiap lingkaran?</li>
+									<li>Hitunglah nilai dari $\frac{22}{7}$. Berapa nilai yang diperolah?</li>
+									<li>Bandingkan antar nilai dari $\frac{22}{7}$ dan nilai dari $\frac{K}{d}$ setiap lingkaran, apa yang kamu dapat?</li>
+								</ol>
+							</div>
+						</div>
+
+						<p>Berdasarkan uji coba pada ketiga lingkaran tersebut, dapat disimpulkan <b>jika rasio setiap kelililing lingkaran adalah sama atau hampir sama</b>. Rasio ini disebut nilai $\pi$ (phi), yang nilainya sekitar $3,14$ atau $\frac{22}{7}$. Hubungan antara keliling lingkaran dan diemeter lingkaran dapat ditulis :</p>
+
+						<div class="text-center mb-3">
+							$\frac{Keliling}{diameter} = \pi$
+						</div>
+
+						<p>$\pi$ yang bernilai $3,14$ biasanya digunakan apabila panjang jari - jari atau diameter lingkaran bukan kelipatan 7. Jika panjang jari - jari atau diameter lingkaran merupakan kelipatan 7, maka nilai $\pi$ yang digunakan adalah $\frac{22}{7}$.</p>
+
+						<p>Setelah kalian mengetahui nilai rasio pada lingkaran adalah sama atau hampir sama, ayo tentukan rumus lingkaran! Jika <b>keliling</b> disimbolkan dengan $K$, <b>diameter</b> disimbolkan dengan $d$, dan rasio lingkaran dituliskan dengan $\pi$ maka rumus keliling lingkaran adalah:</p>
+
+						<div class="text-center mb-3">
+							$K = \pi \times ...$
+						</div>
+
+						<div class="card my-3">
+								<div class="card-body">
+										<h4>Rumus Keliling Lingkaran</h4>
+										<p class="text-center">$K = \pi d$ atau $K = 2\pi r$</p>
+										<p>Keterangan:</p>
+										<p>
+												<span>$K$ = Keliling Lingkaran</span></br>
+												<span>$d$ = diameter Lingkaran</span></br>
+												<span>$r$ = jari-jari Lingkaran</span></br>
+												<span>$\pi$ = rasio lingkaran yang bernilai $3,14$ atau $\frac{22}{7}$</span>
+										</p>
+										<p><b>*catatan: $d = 2 \times r$</b></p>
+								</div>
+						</div>
+
+						<h4>Contoh Soal</h4>
+						<div class="card mb-4">
+							<div class="card-body">
+								<p>Hitunglang keliling lingkaran di bawah ini!</p>
+
+								<img src="/Pages/Materi-2/2/img/1.png" alt="Lingkaran" class="img-fluid d-block" width="150">
+
+								<p class="fw-bold">Penyelesaian:</p>
+
+								<button class="btn btn-sm btn-secondary" id="btnSatu_step-1">Diketahui (Tekan)</button>
+
+								<div id="showSatu_step-1">
+									<p>Diketahui: $d = 6 cm$</p>
+									<button class="btn btn-sm btn-secondary" id="btnSatu_step-2">Jawab (Tekan)</button>
+								</div>
+
+								<div id="showSatu_step-2" class="mt-2">
+									<p>
+										<span>Jawaban:</span> <br>
+										<span>Keliling $ = \pi d$</span> <br>
+										<span>Keliling $ = 3.14 \times 6 cm$</span> <br>
+										<span>Keliling $= 18.84 cm$</span> <br>
+										<span>Jadi, keliling dari lingkaran tersebut adalah 18.84 cm.</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card mb-4">
+							<div class="card-body">
+								<p>Hitunglang keliling lingkaran di bawah ini!</p>
+
+								<img src="/Pages/Materi-2/2/img/2.png" alt="Lingkaran" class="img-fluid d-block" width="150">
+
+								<p class="fw-bold">Penyelesaian:</p>
+
+								<button class="btn btn-sm btn-secondary" id="btnDua_step-1">Diketahui (Tekan)</button>
+
+								<div id="showDua_step-1">
+									<p>Diketahui: $r = 7 cm$</p>
+									<button class="btn btn-sm btn-secondary" id="btnDua_step-2">Jawab (Tekan)</button>
+								</div>
+
+								<div id="showDua_step-2" class="mt-2">
+									<p>
+										<span>Jawaban:</span> <br>
+										<span>Keliling $ = 2 \pi r$</span> <br>
+										<span>Keliling $ = 2 \times \frac{22}{7} \times 7 cm$</span> <br>
+										<span>Keliling $ = 2 \times \frac{22}{\cancel{7}} \times \cancel{7} cm$</span> <br>
+										<span>Keliling $ = 2 \times 22 cm$</span> <br>
+										<span>Keliling $= 44 cm$</span> <br>
+										<span>Jadi, keliling dari lingkaran tersebut adalah 44 cm.</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card mb-4">
+							<div class="card-body">
+								<p>Sebuah jam dinding memiliki keliling sebesar $31.4 cm$. Berapakah panjang dari diameter jam dinding tersebut?</p>
+
+								<p class="fw-bold">Penyelesaian:</p>
+
+								<button class="btn btn-sm btn-secondary" id="btnTiga_step-1">Diketahui (Tekan)</button>
+
+								<div id="showTiga_step-1">
+									<p>Diketahui: $K = 31.4 cm$</p>
+									<button class="btn btn-sm btn-secondary" id="btnTiga_step-2">Jawab (Tekan)</button>
+								</div>
+
+								<div id="showTiga_step-2" class="mt-2">
+									<p>
+										<span>Jawaban:</span> <br>
+										<span>Keliling $ = \pi d$</span> <br>
+										<span>$ 31.4 cm = 3.14 \times d$</span> <br>
+										<span>$d = \frac{31.4 cm}{3.14} $</span> <br>
+										<span>$d = 10 cm$</span> <br>
+										<span>Jadi, panjang diameter dari jam dinding tersebut adalah 10 cm.</span>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card mb-4">
+							<div class="card-body">
+								<p>Keliling sebuah lingkaran 88 cm, berapakah panjang jari – jari dari lingkaran tersebut?</p>
+
+								<p class="fw-bold">Penyelesaian:</p>
+
+								<button class="btn btn-sm btn-secondary" id="btnEmpat_step-1">Diketahui (Tekan)</button>
+
+								<div id="showEmpat_step-1">
+									<p>Diketahui: $K = 88 cm$</p>
+									<button class="btn btn-sm btn-secondary" id="btnEmpat_step-2">Jawab (Tekan)</button>
+								</div>
+
+								<div id="showEmpat_step-2" class="mt-2">
+									<p>
+										<span>Jawaban:</span> <br>
+										<span>Keliling $ = 2 \pi r$</span> <br>
+										<span>$ 88 cm = 2 \times 3.14 \times r$</span> <br>
+										<span>$88 cm = 6.28 \times r $</span> <br>
+										<span>$r =\frac{88}{6.28} cm $</span> <br>
+										<span>$r = 14.01 cm$</span> <br>
+										<span>Jadi, panjang jari-jari dari lingkaran tersebut adalah 14.01 cm.</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<!-- End Course -->
+						<hr>
+						<div class="row web">
+							<div class="col-lg-6 col-sm-12">
+								<a href="/Pages/Materi-2/1/" class="btn btn-sm btn-outline-dark" id="back"><i class="fas fa-chevron-left"></i> Sebelumnya</a>
+							</div>
+							<div class="col-lg-6 col-sm-12 text-end">
+								<a href="/Pages/Materi-2/3/" class="btn btn-sm btn-dark" id="next">Selanjutnya <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+
+						<div class="responsive">
+							<div class="d-grid gap-2">
+								<a href="/Pages/Materi-2/1/" class="btn btn-sm btn-outline-dark" id="back"><i class="fas fa-chevron-left"></i> Sebelumnya</a>
+								<a href="/Pages/Materi-2/3/" class="btn btn-sm btn-dark" id="next">Selanjutnya <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+
+					</div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <p class="text-center">&copy; 2021 Media Pembelajaran Lingkaran</p>
+      </div>
+    </section>
+
+    <!-- Memanggil file Component JS -->
+    <script src="/components/navbar.js"></script>
+    <script src="/components/list-course.js"></script>
+    <script src="/components/list-course-responsive.js"></script>\
+		<script src="./script.js"></script>
+
+    <!-- Mathjax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+    ></script>
+    <!-- Memanggil Bootstrap JS -->
+    <script src="/Asset/Bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

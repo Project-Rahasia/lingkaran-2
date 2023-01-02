@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="/Asset/Image/circle.png"
+      type="image/x-icon"
+    />
+
+    <!-- Memanggil Bootstrap CSS -->
+    <link rel="stylesheet" href="/Asset/Bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Memanggil CSS -->
+    <link rel="stylesheet" href="/Asset/CSS/Course.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.0/dist/sweetalert2.min.css"
+    />
+
+    <title>Latihan</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav"></nav>
+
+    <!-- Main Content -->
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-md-8 col-sm-12 my-3">
+          <div class="card shadow">
+            <div class="card-body">
+              <h4>Petunjuk Mengerjakan</h4>
+              <hr />
+              <div class="course">
+                <ul>
+                  <li>
+                    Masukkan <b>'Nama'</b> dan <b>'Kelas'</b> anda pada kolom
+                    yang tersedia. Tekan tombol <b>'Mulai'</b> untuk masuk ke
+                    laman latihan.
+                  </li>
+                  <li>
+                    Pada bagian kanan laman terdapat navigasi nomor soal yang
+                    apabila di klik atau tekan akan menampilkan soal berdasarkan
+                    nomor soal yang di klik.
+                  </li>
+                  <li>Jumlah soal sebanyak 10 butir berupa pilihan ganda.</li>
+                  <li>
+                    Waktu pengerjaan soal adalah 60 menit. Jika waktu pengerjaan
+                    habis, maka akan dialihkan ke laman hasil.
+                  </li>
+                  <li>
+                    Klik atau tekan salah satu pilihan jawaban yang dianggap
+                    benar.
+                  </li>
+                  <li>
+                    Tekan tombol selesai pad bagian kanan laman di bawah
+                    navigasi nomor soal untuk mengakhiri menjawab.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 my-3">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h4>Latihan Akhir</h4>
+              <hr />
+              <div class="form-group mt-5">
+                <label for="">Nama</label>
+                <input
+                  type="text"
+                  id="nama"
+                  class="form-control"
+                  placeholder="Masukkan Nama ....."
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Kelas</label>
+                <input
+                  type="text"
+                  id="kelas"
+                  class="form-control"
+                  placeholder="Masukkan Kelas ....."
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group my-2">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" id="masuk" type="button">
+                    Mulai
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <p class="text-center">&copy; 2021 Media Pembelajaran Lingkaran</p>
+      </div>
+    </section>
+
+    <!-- Memanggil Bootstrap JS -->
+    <script src="/Asset/Bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Memanggil file Component JS -->
+    <script src="/components/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.10.0/dist/sweetalert2.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const masuk = document.getElementById("masuk");
+        const nama = document.getElementById("nama");
+        const kelas = document.getElementById("kelas");
+
+        masuk.addEventListener("click", () => {
+          if (nama.value === "" || kelas.value === "") {
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: "Nama dan Kelas tidak boleh kosong!",
+            });
+          } else {
+            var now = Date.now();
+            sessionStorage.setItem("nama", nama.value);
+            sessionStorage.setItem("kelas", kelas.value);
+            sessionStorage.setItem("timer-4", now);
+            location.href = "./quiz.html";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
