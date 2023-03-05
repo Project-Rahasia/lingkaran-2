@@ -16,12 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     nextSoal[0].addEventListener("click", nextSlide);
     nextSoal[1].addEventListener("click", nextSlide);
+    nextSoal[2].addEventListener("click", nextSlide);
 
     // Soal 1
     const userAnswerSatu = document.querySelectorAll(".user-answer-1");
     const checkSatu = document.getElementById("check-1");
     const messageSatu = document.getElementById("message-1");
-    const answeSatu = ["50.24", "109.9"];
+    const answeSatu = ["17", "2", "3.14", "17", "6.28", "17", "106.76"];
 
     checkSatu.addEventListener("click", () => {
         let wrong = 0;
@@ -34,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        if (wrong === 2) {
+        if (wrong === 7) {
             messageSatu.innerHTML = "<b>Semua jawaban salah</b>";
             messageSatu.style.color = "red";
         } else if (wrong > 0) {
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const userAnswerDua = document.querySelectorAll(".user-answer-2");
     const checkDua = document.getElementById("check-2");
     const messageDua = document.getElementById("message-2");
-    const answeDua = ["7", "104"];
+    const answeDua = ["7", "22", "7", "7", "22", "1", "22"];
 
     checkDua.addEventListener("click", () => {
         let wrong = 0;
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        if (wrong === 2) {
+        if (wrong === 7) {
             messageDua.innerHTML = "<b>Semua jawaban salah</b>";
             messageDua.style.color = "red";
         } else if (wrong > 0) {
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const userAnswerTiga = document.querySelectorAll(".user-answer-3");
     const checkTiga = document.getElementById("check-3");
     const messageTiga = document.getElementById("message-3");
-    const answeTiga = ["42.03", "35.03"];
+    const answeTiga = ["314", "314", "3.14", "314", "3.14", "100"];
 
     checkTiga.addEventListener("click", () => {
         let wrong = 0;
@@ -94,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        if (wrong === 2) {
+        if (wrong === 6) {
             messageTiga.innerHTML = "<b>Semua jawaban salah</b>";
             messageTiga.style.color = "red";
         } else if (wrong > 0) {
@@ -103,6 +104,36 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             messageTiga.innerHTML = "<b>Jawaban benar semua</b>";
             messageTiga.style.color = "green";
+            nextSoal[2].classList.remove("disabled");
+        }
+    });
+
+    // Soal 4
+    const userAnswerEmpat = document.querySelectorAll(".user-answer-4");
+    const checkEmpat = document.getElementById("check-4");
+    const messageEmpat = document.getElementById("message-4");
+    const answeEmpat = ["220", "220", "2", "3.14", "220", "6.28", "220", "6.28", "35.03"];
+
+    checkEmpat.addEventListener("click", () => {
+        let wrong = 0;
+        answeEmpat.forEach((item, index) => {
+            if (userAnswerEmpat[index].value != item) {
+                userAnswerEmpat[index].style.border = "2px solid red";
+                wrong++;
+            } else {
+                userAnswerEmpat[index].style.border = "2px solid green";
+            }
+        });
+
+        if (wrong === 9) {
+            messageEmpat.innerHTML = "<b>Semua jawaban salah</b>";
+            messageEmpat.style.color = "red";
+        } else if (wrong > 0) {
+            messageEmpat.innerHTML = "<b>Masih ada jawaban yang salah</b>";
+            messageEmpat.style.color = "red";
+        } else {
+            messageEmpat.innerHTML = "<b>Jawaban benar semua</b>";
+            messageEmpat.style.color = "green";
         }
     });
 });

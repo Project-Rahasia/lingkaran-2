@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Contoh 1
+   // Contoh 1
   const btnSatuStep1 = document.getElementById("btnSatu_step-1");
   const showSatuStep1 = document.getElementById("showSatu_step-1");
   showSatuStep1.style.display = "none";
@@ -87,22 +87,47 @@ document.addEventListener("DOMContentLoaded", () => {
     showEmpatStep3.style.display = "block";
   });
 
-  // Latihan
-  const keliling = document.querySelectorAll(".keliling");
-  const perbandingan = document.querySelectorAll(".perbandingan");
-  const cekAnswer = document.getElementById("check-answer");
-
-  const diameter = [4, 6, 8, 10];
-
-  cekAnswer.addEventListener("click", () => {
-    diameter.forEach((value, index) => {
-      const hasil = keliling[index].value / value;
-
-      if (perbandingan[index].value !== hasil) {
-        perbandingan[index].style.border = "2px solid red";
-      } else {
-        perbandingan[index].style.border = "2px solid green";
-      }
-    });
+  // Contoh 5
+  const btnLimaStep1 = document.getElementById("btnLima_step-1");
+  const showLimaStep1 = document.getElementById("showLima_step-1");
+  showLimaStep1.style.display = "none";
+  btnLimaStep1.addEventListener("click", () => {
+    showLimaStep1.style.display = "block";
   });
-});
+
+  const btnLimaStep2 = document.getElementById("btnLima_step-2");
+  const showLimaStep2 = document.getElementById("showLima_step-2");
+  showLimaStep2.style.display = "none";
+  btnLimaStep2.addEventListener("click", () => {
+    showLimaStep2.style.display = "block";
+  });
+
+  const btnLimaStep3 = document.getElementById("btnLima_step-3");
+  const showLimaStep3 = document.getElementById("showLima_step-3");
+  showLimaStep3.style.display = "none";
+  btnLimaStep3.addEventListener("click", () => {
+    showLimaStep3.style.display = "block";
+  });
+
+  // Contoh 6
+  const btnEnamStep1 = document.getElementById("btnEnam_step-1");
+  const showEnamStep1 = document.getElementById("showEnam_step-1");
+  showEnamStep1.style.display = "none";
+  btnEnamStep1.addEventListener("click", () => {
+    showEnamStep1.style.display = "block";
+  });
+
+  const btnEnamStep2 = document.getElementById("btnEnam_step-2");
+  const showEnamStep2 = document.getElementById("showEnam_step-2");
+  showEnamStep2.style.display = "none";
+  btnEnamStep2.addEventListener("click", () => {
+    showEnamStep2.style.display = "block";
+  });
+
+  const btnEnamStep3 = document.getElementById("btnEnam_step-3");
+  const showEnamStep3 = document.getElementById("showEnam_step-3");
+  showEnamStep3.style.display = "none";
+  btnEnamStep3.addEventListener("click", () => {
+    showEnamStep3.style.display = "block";
+  });
+})

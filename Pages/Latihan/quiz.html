@@ -85,12 +85,29 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav"></nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            src="/Asset/Image/Logo.png"
+            alt=""
+            width="25"
+            height="25"
+            class="d-inline-block align-text-top"
+          />
+          <span>Lingkaran</span>
+        </a>
+
+        <div id="time" class="badge bg-dark fw-bold" style="font-size: 1.5em">
+          00 : 00
+        </div>
+      </div>
+    </nav>
 
     <!-- Main Content -->
     <div class="container my-4">
       <div class="row">
-        <div class="col-lg-10 col-sm-12 my-2">
+        <div class="col-lg-9 col-sm-12 my-2">
           <div class="card h-100 shadow">
             <div class="card-body">
               <div class="quiz-container">
@@ -108,17 +125,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-2 col-sm-12 my-2">
+        <div class="col-lg-3 col-sm-12 my-2">
           <div class="card h-100 shadow">
             <div class="card-body text-center">
-              <div
-                id="time"
-                class="badge bg-dark fw-bold"
-                style="font-size: 1em"
-              >
-                00 : 00
-              </div>
-              <hr />
               <span class="number-btn"></span>
               <hr />
               <button id="submit" class="btn btn-md btn-danger end shadow">
@@ -172,11 +181,11 @@
       } else {
         var sliceQuestion;
         // melakukan pemotongan array batasan soal yang ingin diambil
-        sliceQuestion = randomQuestion.slice(0, 10);
+        sliceQuestion = randomQuestion.slice(0, 20);
         // console.log(sliceQuestion);
         sessionStorage.setItem(
           "soalSession-4",
-          JSON.stringify(randomQuestion.slice(0, 10))
+          JSON.stringify(randomQuestion.slice(0, 20))
         );
       }
 
@@ -401,7 +410,7 @@
 
       if (soalSession) {
         var sessCheckJawaban = [];
-        for (i = 0; i <= 9; i++) {
+        for (i = 0; i <= 19; i++) {
           sessCheckJawaban[i] = sessionStorage.getItem(`question-empat${i}`);
           if (sessCheckJawaban[i] != null) {
             const splitCheck = sessCheckJawaban[i].split(",");

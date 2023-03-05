@@ -30,204 +30,333 @@
 
     <!-- Membuat Breadcrumb -->
     <nav aria-label="breadcrumb" class="breadcrumb-header">
-        <ol class="breadcrumb container">
-            <li class="breadcrumb-item"><a href="/">Beranda</a></li>
-            <li class="breadcrumb-item"><a href="/Pages/Materi-2/0/">Luas Lingkaran</a></li>
-            <li class="breadcrumb-item active">Menentukan Rumus Luas Lingkaran</li>
-        </ol>
+      <ol class="breadcrumb container">
+          <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+          <li class="breadcrumb-item"><a href="/Pages/Materi-2/0/">Luas Lingkaran</a></li>
+          <li class="breadcrumb-item active">Menentukan Rumus Luas Lingkaran</li>
+      </ol>
     </nav>
     <!-- End Breadcrumb -->
 
     <!-- Main Content -->
     <div class="container my-4">
-        <div class="row">
-            <div class="col-lg-3 col-sm-12">
-                <div class="list-course">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12">
+            <div class="list-course">
 
-                </div>
-            </div>
-
-            <div class="col-lg-9 col-sm-12">
-                <div class="card card-body">
-                    <!-- Start Course -->
-                    <h1>Menentukan Rumus Luas Lingkaran</h1>
-                    <hr>
-                    <div class="course">
-                        <ol>
-                            <li>Perhatikan Gambar 18!</li>
-                            <li>
-                                <p>Bagilah lingkaran menjadi 2 bagian dan beri warna masing - masing bagian yang
-                                    terbentuk.</p>
-                                <div class="row justify-content-center text-center my-3">
-                                    <div class="col-md-5 col-sm-12">
-                                        <img src="/Pages/Materi-3/1/img/1.jpg" alt="Uang Logam" class="img-fluid"
-                                            width="200">
-                                        <span class="src-text">Gambar 18 lingkaran yang dibagi 2 bagian</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <p>Bagi masing - masing bagian menjadi 8 juring dan beri angka, sehingga akan terbentuk
-                                    16 buah juring yang sama besar seperti pada Gambar 19.</p>
-                                <div class="row justify-content-center text-center my-3">
-                                    <div class="col-md-5 col-sm-12">
-                                        <img src="/Pages/Materi-3/1/img/2.jpg" alt="Uang Logam" class="img-fluid"
-                                            width="200">
-                                    </div>
-                                    <span class="src-text">Gambar 19 lingkaran yang dibagi menjadi 16 buah juring yang
-                                        sama besar</span>
-                                </div>
-                                <p>Untuk juring ke 16 bagi kembali menjadi 2 bagian yang sama besar, sehingga akan
-                                    seperti pada Gambar 20 berikut.</p>
-                                <div class="row justify-content-center text-center my-3">
-                                    <div class="col-md-5 col-sm-12">
-                                        <img src="/Pages/Materi-3/1/img/3.jpg" alt="Uang Logam" class="img-fluid"
-                                            width="200">
-                                    </div>
-                                    <span class="src-text">Gambar 20 lingkaran dengan juring ke 16 yang dibagi 2.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <p>Potong semua juring yang terbentuk dan susunlah potongan juring tersebut hingga
-                                    membentuk seperti pada Gambar 21.</p>
-                                <div class="row justify-content-center text-center my-3">
-                                    <div class="col-md-5 col-sm-12">
-                                        <img src="/Pages/Materi-3/1/img/4.jpg" alt="Uang Logam" class="img-fluid"
-                                            width="300">
-                                    </div>
-                                    <span class="src-text">Gambar 21 susunan juring-juring lingkaran yang membentuk
-                                        persegi panjang</span>
-                                </div>
-                            </li>
-                            <li>Dapatkah kalian menebak bangun datar apa yang terbentuk dari hasil potongan juring -
-                                juring lingkaran tersebut?</li>
-                            <li>Susunan dari juring - juring lingkaran tersebut membentuk sebuah bangun datar
-                                <strong>persegi panjang</strong>.</li>
-                            <li>Pada Gambar 22 menunjukan bahwa <strong>panjang dari persegi panjang</strong> yang
-                                terbentuk adalah <strong>sama dengan ukuran setengah keliling lingkaran</strong> dan
-                                <strong>lebarnya sama dengan ukuran jari - jari lingkaran</strong>.</li>
-                            <li>
-                                <p>Ingat kembali rumus keliling lingkaran adalah <strong>$2 \pi r$, sehingga setengah
-                                        dari keliling lingkaran adalah </strong>$\frac{\bcancel{2} \pi r}{\bcancel{2}}$
-                                </p>
-                                <div class="row justify-content-center text-center my-3">
-                                    <div class="col-md-5 col-sm-12">
-                                        <img src="/Pages/Materi-3/1/img/5.jpg" alt="Uang Logam" class="img-fluid"
-                                            width="300">
-                                    </div>
-                                    <span class="src-text">Gambar 22 menemukan rumus luas lingkaran dari luas persegi
-                                        panjang.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <p>Pada Gambar 22 menunjukan bahwa luas lingkaran sama dengan persegi panjang. Jika pada
-                                    Gambar 22 $panjang = \pi \times r$ dan $lebar = r$, maka rumus luas lingkaran adalah
-                                </p>
-                                <p>
-                                    <span>Luas Lingkaran = Luas Persegi Panjang</span> <br>
-                                    <div style="text-indent: 7.5em">
-                                        <p>$= p \times l$</p>
-                                        <p>$= (\pi \times r) \times r$</p>
-                                        <p>$= \pi r^2$</p>
-                                    </div>
-                                </p>
-                                <p>Diketahui bahwa $d = 2r$ sehingga $r = \frac{1}{2}d$. Dengan demikian, diperoleh :
-                                </p>
-                                <p>
-                                    <span>Luas $= \pi r^2$</span> <br>
-                                    <div style="text-indent: 2.5em">
-                                        <p>$= \pi (\frac{1}{2}d)^2$</p>
-                                        <p>$= \pi (\frac{1}{4}d^2)$</p>
-                                        <p>$= \frac{1}{4} \pi d^2$</p>
-                                    </div>
-                                </p>
-                            </li>
-                        </ol>
-
-                    </div>
-                    <div class="card my-3">
-                        <div class="card-body">
-                            <h4>Rumus Luas Lingkaran</h4>
-                            <p class="text-center">$L = \pi r^2$ atau $L = \frac{1}{4} \pi d^2$</p>
-                            <p>Keterangan:</p>
-                            <p>
-                                <span>$L$ = Luas Lingkaran</span></br>
-                                <span>$\pi$ = rasio lingkaran yang bernilai $3,14$ atau $\frac{22}{7}$</span>
-                                <span>$r$ = jari-jari Lingkaran</span></br>
-                                <span>$d$ = diameter Lingkaran</span></br>
-                            </p>
-                        </div>
-                    </div>
-
-                    <h4>Contoh Soal</h4>
-                    <div class="course">
-                        <ol>
-                            <li>
-                                <p>Hitunglah luas lingkaran jika diketahui:</p>
-                                <ol type="a">
-                                    <li>Jari - jari = 7 cm</li>
-                                    <li>Diameter = 10 cm</li>
-                                </ol>
-                                <p><b>Penyelesaian</b>:</p>
-                                <ol type="a">
-                                    <li>
-                                        Diketahui:
-                                        <p>$r = 7 cm$ dapat dibagi dengan 7 sehingga digunakan nilai $\pi =
-                                            \frac{22}{7}$</p>
-                                        <p>
-                                            <span>Luas $= \pi r^2$</span> <br>
-                                            <div style="text-indent: 2.5em">
-                                                <p>$= \frac{22}{7} \times 7^2 $</p>
-                                                <p>$= \frac{22}{7} \times 49 $</p>
-                                                <p>$= 22 \times 7 = 154 cm^2 $</p>
-                                            </div>
-                                        </p>
-                                        <p>Jadi, luas lingkaran tersebut adalah $154 cm^2$</p>
-                                    </li>
-                                    <li>
-                                        Diketahui:
-                                        <p>$d = 10 cm$ maka $r = \frac{10}{2} = 5 cm$, tidak dapat dibagi dengan 7
-                                            sehingga digunakan nilai $\pi = 3,14$</p>
-                                        <p>
-                                            <span>Luas $= \pi r^2$</span> <br>
-                                            <div style="text-indent: 2.5em">
-                                                <p>$= 3,14 \times 5^2 $</p>
-                                                <p>$= 3,14 \times 25 = 78,5 cm^2 $</p>
-                                            </div>
-                                        </p>
-                                        <p>Jadi, luas lingkaran tersebut adalah $78,5 cm^2$</p>
-                                    </li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </div>
-
-
-                    <!-- End Course -->
-                    <hr>
-                    <div class="row web">
-                        <div class="col-lg-6 col-sm-12">
-                            <a href="/Pages/Materi-3/0/" class="btn btn-sm btn-outline-dark" id="back"><i
-                                    class="fas fa-chevron-left"></i> Sebelumnya</a>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 text-end">
-                            <a href="/Pages/Materi-3/2/" class="btn btn-sm btn-dark" id="next">Selanjutnya <i
-                                    class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="responsive">
-                        <div class="d-grid gap-2">
-                            <a href="/Pages/Materi-3/0/" class="btn btn-sm btn-outline-dark" id="back"><i
-                                    class="fas fa-chevron-left"></i> Sebelumnya</a>
-                            <a href="/Pages/Materi-3/2/" class="btn btn-sm btn-dark" id="next">Selanjutnya <i
-                                    class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
+
+        <div class="col-lg-9 col-sm-12">
+          <div class="card card-body">
+              <!-- Start Course -->
+              <h1>Menentukan Rumus Luas Lingkaran</h1>
+              <hr>
+              <div class="course">
+                  <ol>
+                      <li>
+                          <p>Perhatikan gambar lingkaran di bawah ini</p>
+                          <div class="row justify-content-center text-center my-3">
+                              <div class="col-md-5 col-sm-12">
+                                  <img src="/Pages/Materi-3/1/img/1.png" alt="Uang Logam" class="img-fluid"
+                                      width="500">
+                                  <span class="src-text">Gambar 20 lingkaran</span>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <p>Bagian lingkaran tersebut dibuat terbagi dengan kelipatan 2 bagian</p>
+                          <div class="row justify-content-center text-center my-3">
+                              <div class="col-md-5 col-sm-12">
+                                  <img src="/Pages/Materi-3/1/img/2.png" alt="Uang Logam" class="img-fluid"
+                                      width="500">
+                              </div>
+                              <span class="src-text">Gambar 21 Lingkaran dibagi menjadi 2 bagian</span>
+                          </div>
+                          <div class="row justify-content-center text-center my-3">
+                              <div class="col-md-5 col-sm-12">
+                                  <img src="/Pages/Materi-3/1/img/3.png" alt="Uang Logam" class="img-fluid"
+                                      width="500">
+                              </div>
+                              <span class="src-text">Gambar 22 Lingkaran dibagi menjadi 4 bagian</span>
+                          </div>
+                      </li>
+                      <li>
+                          <p>Kemudian potongan setiap bagian lingkaran tersebut disusun menjadi berbentuk seperti persegi panjang.</p>
+                          <div class="row justify-content-center text-center my-3">
+                              <div class="col-md-5 col-sm-12">
+                                  <img src="/Pages/Materi-3/1/img/4.png" alt="Uang Logam" class="img-fluid"
+                                      width="500">
+                              </div>
+                              <span class="src-text">Gambar 23 Potongan disusun menyerupai persegi panjang</span>
+                          </div>
+                      </li>
+                      <li>
+                          <p>Selanjutnya geser titik slide untuk merubah jumlah potongan pada lingkaran tersebut. Semakin banyak potongannya maka akan semakin terlihat berbentuk persegi panjang.</p>
+                          <div class="row justify-content-center text-center my-3">
+                              <div class="col-md-5 col-sm-12">
+                                  <img src="/Pages/Materi-3/1/img/5.png" alt="Uang Logam" class="img-fluid"
+                                      width="500">
+                              </div>
+                              <span class="src-text">Gambar 24 Susunan potongan juring lingkaran</span>
+                          </div>
+                      </li>
+                  </ol>
+              </div>
+
+              <p>Potongan bagian - bagian lingkaran tersebut dibagi menjadi beberapa juring, dan ketika disusun potongan tersebut menyerupai bentuk persegi panjang. Dari potongan yang disusun menyerupai bentuk persegi panjang tersebut, menunjukkan bahwa panjang dari persegi panjang sama dengan ukuran setengah keliling lingkaran dan lebarnya sama dengan ukuran jari - jari lingkaran.</p>
+
+              <p>Ingat kembali bahwa rumus keliling lingkaran adalah $K= 2 \pi r$, maka dapat dituliskan rumus setengah keliling lingkaran adalah </p>
+
+              <p class="text-center">
+                  $ \frac{1}{2} K = \frac{1}{2} \times 2 \pi r $ <br>
+                  $ \frac{1}{2} K = \frac{ \cancel{2} \pi r }{ \cancel{2} } $ <br>
+              </p>
+
+              <p>Berdasarkan bentuk potongan - potongan lingkaran yang disusun menyerupai persegi panjang menunjukkan bahwa luas lingkaran sama dengan luas persegi panjang, dengan panjang $= \pi r$ dan lebar $= r$. Dengan begitu rumus luas lingkaran dapat dituliskan sebagai berikut :</p>
+
+              <p>Luas Lingkaran = Luas Persegi Panjang </p>
+              <p style="text-indent: 7.3em;">= Panjang $\times$ Lebar</p>
+              <p style="text-indent: 7.3em;">= $\pi r \times r$</p>
+              <p>Luas Lingkaran = $\pi r^{2} $</p> 
+
+              <p>Jika diketahui diameter lingkarannya, dengan $d=2r$, maka $r=  \frac{1}{2} d$ maka rumus untuk mencari luas lingkaran dapat dituliskan sebagai berikut :</p>
+
+              <p>Luas Lingkaran = $\pi r^{2} $ </p>
+              <p style="text-indent: 7.3em;">= $ \pi (\frac{1}{2}d)^2 $</p>
+              <p style="text-indent: 7.3em;">= $ \pi (\frac{1}{2}d^4) $</p>
+              <p>Luas Lingkaran = $ \frac{1}{4} \pi d^2 $ </p>
+
+              <div class="card my-3">
+                  <div class="card-body">
+                      <h4>Rumus Luas Lingkaran</h4>
+                      <p class="text-center">$L = \pi r^2$ atau $L = \frac{1}{4} \pi d^2$</p>
+                      <p>Keterangan:</p>
+                      <p>
+                          <span>$L$ = Luas Lingkaran</span></br>
+                          <span>$\pi$ = nilai $3,14$ atau $\frac{22}{7}$</span><br>
+                          <span>$r$ = jari-jari Lingkaran</span></br>
+                          <span>$d$ = diameter Lingkaran</span></br>
+                      </p>
+                  </div>
+              </div>
+
+              <h4>Contoh Soal</h4>
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <p>Perhatikan gambar lingkaran di bawah ini!</p>
+                      <img src="./img/contoh-1.png" alt="contoh-1" class="img-fluid" width="200">
+                      <p>Jika diketahui jari - jari lingkaran 14 cm, maka berapa luas lingkaran tersebut?</p>
+                      <p class="fw-bold">Penyelesaian:</p>
+                      <button class="btn btn-sm btn-secondary" id="btnSatu_step-1">Diketahui (Tekan)</button>
+
+                      <div id="showSatu_step-1">
+                          <p>Diketahui: <br> $r = 14 cm$</p>
+                          <button class="btn btn-sm btn-secondary" id="btnSatu_step-2">Ditanya (Tekan)</button>
+                      </div>
+
+                      <div id="showSatu_step-2">
+                          <p>Ditanya: <br> Luas = ... ?</p>
+                          <button class="btn btn-sm btn-secondary" id="btnSatu_step-3">Jawab (Tekan)</button>
+                      </div>
+
+                      <div id="showSatu_step-3">
+                          <p>Jawaban:</p>
+                          <p>
+                              Luas = $ \pi r^{2} $ <br/>
+                              Luas = $ \frac{22}{7} \times 14^{2} $<br/>
+                              Luas = $ \frac{22}{7} \times 14 \times 14 $<br/>
+                              Luas = $ \frac{22}{ \cancel{7} } \times \cancel{14} \times 14 $<br/>
+                              Luas = $ 22 \times 2 \times 14 $<br/>
+                              Luas = $ 616 cm^{2} $<br/>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <p>Perhatikan gambar lingkaran di bawah ini!</p>
+                      <img src="./img/contoh-2.png" alt="contoh-1" class="img-fluid" width="200">
+                      <p>Hitunglah berapa luas lingkaran tersebut?</p>
+                      <p class="fw-bold">Penyelesaian:</p>
+                      <button class="btn btn-sm btn-secondary" id="btnDua_step-1">Diketahui (Tekan)</button>
+
+                      <div id="showDua_step-1">
+                          <p>Diketahui: <br> $r = 3 cm$</p>
+                          <button class="btn btn-sm btn-secondary" id="btnDua_step-2">Ditanya (Tekan)</button>
+                      </div>
+
+                        <div id="showDua_step-2">
+                          <p>Ditanya: <br> Luas = ... ?</p>
+                          <button class="btn btn-sm btn-secondary" id="btnDua_step-3">Jawab (Tekan)</button>
+                      </div>
+
+                      <div id="showDua_step-3">
+                          <p>Jawaban:</p>
+                          <p>
+                              Luas = $ \pi r^{2} $ <br/>
+                              Luas = $ 3.14 \times 14^{2} $<br/>
+                              Luas = $ 3.14 \times 14 \times 14 $<br/>
+                              Luas = $ 3.14 \times 9 $<br/>
+                              Luas = $ 28.26 cm^{2} $<br/>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <p>Perhatikan gambar lingkaran di bawah ini!</p>
+                      <img src="./img/contoh-3.png" alt="contoh-1" class="img-fluid" width="200">
+                      <p>Jika diketahui diameter lingkaran adalah 10 cm, berapakah luas lingkaran tersebut?</p>
+                      <p class="fw-bold">Penyelesaian:</p>
+                      <button class="btn btn-sm btn-secondary" id="btnTiga_step-1">Diketahui (Tekan)</button>
+
+                      <div id="showTiga_step-1">
+                          <p>Diketahui: <br> $d = 10 cm$</p>
+                          <button class="btn btn-sm btn-secondary" id="btnTiga_step-2">Ditanya (Tekan)</button>
+                      </div>
+
+                      <div id="showTiga_step-2">
+                          <p>Ditanya: <br> Luas = ... ?</p>
+                          <button class="btn btn-sm btn-secondary" id="btnTiga_step-3">Jawab (Tekan)</button>
+                      </div>
+
+                      <div id="showTiga_step-3">
+                          <p>Jawaban:</p>
+                          <p>
+                              Luas = $ \frac{1}{4} \pi d^2 $ <br/>
+                              Luas = $ \frac{1}{4} \times 3.14 \times 10^2 $<br/>
+                              Luas = $ \frac{1}{4} \times 3.14 \times 10 \times 10 $<br/>
+                              Luas = $ \frac{1}{4} \times 3.14 \times 100 $<br/>
+                              Luas = $ \frac{1}{4} \times 314 $<br/>
+                              Luas = $ 78.5 cm^{2} $<br/>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <p>Perhatikan gambar lingkaran di bawah ini!</p>
+                      <img src="./img/contoh-4.png" alt="contoh-1" class="img-fluid" width="200">
+                      <p>Jika diketahui diameter lingkaran adalah 21 cm, hitunglah berapa luas lingkaran tersebut?</p>
+                      <p class="fw-bold">Penyelesaian:</p>
+                      <button class="btn btn-sm btn-secondary" id="btnEmpat_step-1">Diketahui (Tekan)</button>
+
+                      <div id="showEmpat_step-1">
+                          <p>Diketahui: <br> $d = 21 cm$</p>
+                          <button class="btn btn-sm btn-secondary" id="btnEmpat_step-2">Ditanya (Tekan)</button>
+                      </div>
+
+                      <div id="showEmpat_step-2">
+                          <p>Ditanya: <br> Luas = ... ?</p>
+                          <button class="btn btn-sm btn-secondary" id="btnEmpat_step-3">Jawab (Tekan)</button>
+                      </div>
+
+                      <div id="showEmpat_step-3">
+                          <p>Jawaban:</p>
+                          <p>
+                              Luas = $ \frac{1}{4} \pi d^2 $ <br/>
+                              Luas = $ \frac{1}{4} \times \frac{22}{7} \times 21^2 $<br/>
+                              Luas = $ \frac{1}{4} \times \frac{22}{7} \times 21 \times 21 $<br/>
+                              Luas = $ \frac{1}{4} \times \frac{22}{\cancel{7}} \times \cancel{21} \times 21 $<br/>
+                              Luas = $ \frac{1}{4} \times 22 \times 3 \times 21 $<br/>
+                              Luas = $ \frac{1}{4} \times 1386 $<br/>
+                              Luas = $ 346.5 cm^{2} $<br/>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <p>Pak Bayu akan membuat sebuah taman bunga berbentuk lingkaran dengan jari - jari 15 m. Tentukanlah luas taman bunga yang akan dibuat Pak Damar!</p>
+                      
+                      <p class="fw-bold">Penyelesaian:</p>
+                      <button class="btn btn-sm btn-secondary" id="btnLima_step-1">Diketahui (Tekan)</button>
+
+                      <div id="showLima_step-1">
+                          <p>Diketahui: <br> $d = 15 cm$</p>
+                          <button class="btn btn-sm btn-secondary" id="btnLima_step-2">Ditanya (Tekan)</button>
+                      </div>
+
+                      <div id="showLima_step-2">
+                          <p>Ditanya: <br> Luas = ... ?</p>
+                          <button class="btn btn-sm btn-secondary" id="btnLima_step-3">Jawab (Tekan)</button>
+                      </div>
+
+                      <div id="showLima_step-3">
+                          <p>Jawaban:</p>
+                          <p>
+                              Luas = $ \pi r^{2} $ <br/>
+                              Luas = $ 3.14 \times 15^{2} $ <br/>
+                              Luas = $ 3.14 \times 15 \times 15 $ <br/>
+                              Luas = $ 3.14 \times 225 $<br/>
+                              Luas = $ 706.5 cm^{2} $<br/>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <p>Sebuah lingkaran memiliki luas $314 cm^2$. Untuk nilai $π = 3.14$, tentukanlah nilai jari - jari lingkaran tersebut!</p>
+
+                      <p class="fw-bold">Penyelesaian:</p>
+                      <button class="btn btn-sm btn-secondary" id="btnEnam_step-1">Diketahui (Tekan)</button>
+
+                      <div id="showEnam_step-1">
+                          <p>Diketahui: <br> $Luas = 314 cm^2$ <br> $ \pi = 3.14 $ </p>
+                          <button class="btn btn-sm btn-secondary" id="btnEnam_step-2">Ditanya (Tekan)</button>
+                      </div>
+
+                      <div id="showEnam_step-2">
+                          <p>Ditanya: <br> $r$ = ... ?</p>
+                          <button class="btn btn-sm btn-secondary" id="btnEnam_step-3">Jawab (Tekan)</button>
+                      </div>
+
+                      <div id="showEnam_step-3">
+                          <p>Jawaban:</p>
+                          <p>
+                              Luas = $ \pi r^2 $ <br/>
+                              $314 cm^2 = 3.14 \times r^2 $<br/>
+                              $ r^2 = \frac{314}{3.14} $<br/>
+                              $ r^2 = 100 $<br/>
+                              $ r = \sqrt{100} $<br/>
+                              $ r = 10 cm $<br/>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+
+              <!-- End Course -->
+              <hr>
+              <div class="row web">
+                  <div class="col-lg-6 col-sm-12">
+                      <a href="/Pages/Materi-3/0/" class="btn btn-sm btn-outline-dark" id="back"><i
+                              class="fas fa-chevron-left"></i> Sebelumnya</a>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 text-end">
+                      <a href="/Pages/Materi-3/2/" class="btn btn-sm btn-dark" id="next">Selanjutnya <i
+                              class="fas fa-chevron-right"></i></a>
+                  </div>
+              </div>
+
+              <div class="responsive">
+                  <div class="d-grid gap-2">
+                      <a href="/Pages/Materi-3/0/" class="btn btn-sm btn-outline-dark" id="back"><i
+                              class="fas fa-chevron-left"></i> Sebelumnya</a>
+                      <a href="/Pages/Materi-3/2/" class="btn btn-sm btn-dark" id="next">Selanjutnya <i
+                              class="fas fa-chevron-right"></i></a>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End Content -->
 
@@ -242,14 +371,17 @@
     <script src="/components/navbar.js"></script>
     <script src="/components/list-course.js"></script>
     <script src="/components/list-course-responsive.js"></script>
+    <script src="./script.js"></script>
 
     <script>
         MathJax = {
+            loader: {load: ['[tex]/cancel']},
             tex: {
                 inlineMath: [
                     ['$', '$'],
                     ['\\(', '\\)']
-                ]
+                ],
+                packages: {'[+]': ['cancel']}
             }
         };
     </script>
