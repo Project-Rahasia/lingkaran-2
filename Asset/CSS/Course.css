@@ -155,10 +155,6 @@ span.src-text {
   border-radius: 2px;
 }
 
-.responsive {
-  display: none;
-}
-
 #nav {
   display: block;
 }
@@ -188,14 +184,6 @@ span.src-text {
 
   .breadcrumb-header {
     display: none;
-  }
-
-  .row .web {
-    display: none;
-  }
-
-  .responsive {
-    display: block;
   }
 
   .embed-responsive {

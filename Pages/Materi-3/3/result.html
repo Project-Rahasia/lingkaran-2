@@ -66,50 +66,25 @@
               </p>
               <h1>Nilai Anda</h1>
               <h1 class="score"></h1>
+              <h4 class="message"></h4>
               <a
                 href="/Pages/Materi-3/3/index.html"
-                class="btn btn-sm btn-info text-white"
+                class="btn btn-sm btn-info text-white retry"
                 >Kerjakan Ulang</a
               >
             </div>
 
             <!-- End Course -->
             <hr />
-            <div class="row web">
-              <div class="col-lg-6 col-sm-12">
-                <a
-                  href="/Pages/Materi-1/10.Latihan/index.html"
-                  class="btn btn-sm btn-outline-dark"
-                  id="back"
-                  ><i class="fas fa-chevron-left"></i> Sebelumnya</a
-                >
+            <div class="row my-3">
+              <div class="col-lg-6 col-sm-12 my-1 text-end d-grid gap-2">
+                <a href="/Pages/Materi-3/2/" class="btn btn-sm btn-outline-dark" id="back"><i class="fas fa-chevron-left"></i> Sebelumnya</a>
               </div>
-              <div class="col-lg-6 col-sm-12 text-end">
-                <a
-                  href="/Pages/Materi-3/0/"
-                  class="btn btn-sm btn-dark"
-                  id="next"
-                  >Selanjutnya <i class="fas fa-chevron-right"></i
-                ></a>
+              <div class="col-lg-6 col-sm-12 text-end my-1 text-end d-grid gap-2">
+                <a href="/Pages/Latihan/" class="btn btn-sm btn-dark next" id="next">Selanjutnya <i class="fas fa-chevron-right"></i></a>
               </div>
             </div>
 
-            <div class="responsive">
-              <div class="d-grid gap-2">
-                <a
-                  href="/Pages/Materi-1/10.Latihan/index.html"
-                  class="btn btn-sm btn-outline-dark"
-                  id="back"
-                  ><i class="fas fa-chevron-left"></i> Sebelumnya</a
-                >
-                <a
-                  href="/Pages/Materi-3/0/"
-                  class="btn btn-sm btn-dark"
-                  id="next"
-                  >Selanjutnya <i class="fas fa-chevron-right"></i
-                ></a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -148,11 +123,13 @@
     <!-- Memanggil Bootstrap JS -->
     <script src="/Asset/Bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script>
+    <script type="module">
       // mengambil hasil yang disimpan pada sessionstorage
       const length = sessionStorage.getItem("length-3");
       const correct = sessionStorage.getItem("correct-3");
       const wrong = sessionStorage.getItem("wrong-3");
+      const nama = sessionStorage.getItem('nama');
+      const kelas = sessionStorage.getItem('kelas');
 
       // menghitung skor yang didapat
       let score = (correct / length) * 100;
@@ -161,6 +138,102 @@
       document.querySelector(".score").innerHTML = Math.ceil(score);
       document.querySelector("#correct").innerHTML = correct;
       document.querySelector("#wrong").innerHTML = wrong;
+
+      const message = document.querySelector(".message");
+      const next = document.querySelector("#next");
+
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDtf0hQVSeaUlD73cNdQprQ-YezYehhQ0U",
+        authDomain: "media-lingkaran.firebaseapp.com",
+        projectId: "media-lingkaran",
+        storageBucket: "media-lingkaran.appspot.com",
+        messagingSenderId: "1026130187367",
+        appId: "1:1026130187367:web:00f90f01ee970c7858b0c2"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      import { getFirestore, collection, getDocs, addDoc, query, where } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
+
+      const db = getFirestore(app);
+      const d = new Date();
+      const date = `${d.getDate()}-${d.getMonth()+1}-${d.getFullYear()}`;
+
+      // Add Data
+      async function addData() {
+        try {
+          const docRef = await addDoc(collection(db, "kuis-3"), {
+            nama: nama,
+            kelas: kelas,
+            nilai: score,
+            tanggal: date
+          });
+          console.log("Document written with ID: ", docRef.id);
+        } catch (e) {
+          console.error("Error adding document: ", e);
+        }
+      }
+
+      // Get KKM
+      async function getData () {
+        let kkm = null;
+        const q = query(collection(db, "tb-kkm"), where("idData", "==", 1));
+
+        const querySnapshot = await getDocs(q);
+        querySnapshot.forEach((doc) => {
+          kkm = doc.data().kkm;
+        });
+        return kkm;
+      }
+
+      const kkm = await getData();
+
+      function removeStorage() {
+        sessionStorage.removeItem('length-3');
+        sessionStorage.removeItem('correct-3');
+        sessionStorage.removeItem('wrong-3');
+        sessionStorage.removeItem('nama');
+        sessionStorage.removeItem('kelas');
+        sessionStorage.removeItem('timer-3');
+        sessionStorage.removeItem('jawaban-3');
+      }
+
+      if (!sessionStorage.getItem('nama')) {
+        removeStorage();
+        window.location = './';
+      } else {
+        if (score < kkm) {
+          next.classList.add("disabled");
+          addData();
+          message.innerText = `Maaf anda belum lulus, nilai minimal yang harus anda dapatkan ${kkm}. Silahkan kerjakan ulang.`;
+        } else {
+          addData();
+          next.classList.remove("disabled");
+          message.innerText = `Selamat anda anda lulus. Silahkan lanjut kemateri berikutnya.`;
+        }
+      }
+
+      const retry = document.querySelector(".retry");
+      retry.addEventListener("click", (e) => {
+        e.preventDefault();
+        removeStorage();
+        window.location = './';
+      });
+
+      next.addEventListener("click", (e) => {
+        e.preventDefault();
+        removeStorage();
+        localStorage.setItem('sub-3-0', '1');
+        const href = next.getAttribute('href');
+        window.location = href;
+      });
     </script>
   </body>
 </html>
