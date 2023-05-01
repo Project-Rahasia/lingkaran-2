@@ -138,5 +138,15 @@
 
     <!-- Memanggil Bootstrap JS -->
     <script src="/Asset/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/components/open-course.js"></script>
+  <script type="text/javascript">
+    const next = document.querySelector(".next");
+    
+    next.addEventListener("click", function(e) {
+      e.preventDefault();
+      localStorage.setItem('sub-1-9', '1');
+      location.href = `${next.getAttribute('href')}`;
+    });
+  </script>
   </body>
 </html>

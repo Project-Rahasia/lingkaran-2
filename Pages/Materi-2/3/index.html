@@ -339,5 +339,15 @@
 
     <!-- Memanggil file JS script -->
     <script src="/Pages/Materi-2/3/script.js"></script>
+    <script src="/components/open-course.js"></script>
+  <script type="text/javascript">
+    const next = document.querySelector(".next");
+    
+    next.addEventListener("click", function(e) {
+      e.preventDefault();
+      localStorage.setItem('sub-2-4', '1');
+      location.href = `${next.getAttribute('href')}`;
+    });
+  </script>
   </body>
 </html>

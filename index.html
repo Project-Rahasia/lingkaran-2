@@ -33,13 +33,10 @@
               <a class="nav-link active" href="/">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Peta Konsep</a>
+              <a class="nav-link" href="/konsep.html">Peta Konsep</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tentang</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Guru/">Guru</a>
+              <a class="nav-link" href="/about.html">Tentang</a>
             </li>
           </ul>
         </div>
@@ -56,7 +53,7 @@
           <div class="col-md-6">
             <h1 class="title">Lingkaran</h1>
             <p>Media pembelajaran untuk siswa kelas VI SD Semester Ganjil</p>
-            <a href="/Pages/Materi-1/1.Pendahuluan/index.html" class="btn btn-start shadow">Mulai Belajar</a>
+            <a href="/Pages/Materi-1/1.Pendahuluan/index.html" class="btn btn-start shadow next">Mulai Belajar</a>
           </div>
 
           <div class="col-md-6">
@@ -93,9 +90,9 @@
           </ol>
           <h2 class="text-center">Kompetensi Dasar</h2>
           <ol>
-            <li>Menjelaskan titik pusat, jari – jari, diameter, busur, tali busur, tembereng, dan juring.</li>
+            <li>Menjelaskan titik pusat, jari - jari, diameter, busur, tali busur, tembereng, dan juring.</li>
             <li>Menjelaskan taksiran keliling dan luas lingkaran.</li>
-            <li>Mengindentifikasi titik pusat, jari – jari, diameter, busur, tali busur, tembereng, dan juring.</li>
+            <li>Mengindentifikasi titik pusat, jari - jari, diameter, busur, tali busur, tembereng, dan juring.</li>
             <li>Menaksir keliling dan luas lingkaran serta menggunakannya untuk menyelesaikan masalah.</li>
           </ol>
         </div>
@@ -114,6 +111,15 @@
 
   <!--Memanggil bootstrap JS-->
   <script src="/Asset/Bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    const next = document.querySelector(".next");
+
+    next.addEventListener("click", function(e) {
+      e.preventDefault();
+      localStorage.setItem('sub-1-0', '1');
+      location.href = `.${next.getAttribute('href')}`;
+    });
+  </script>
 </body>
 
 </html>

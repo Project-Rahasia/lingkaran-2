@@ -183,6 +183,16 @@
 
     <!-- Memanggil file JS -->
     <script src="/Pages/Materi-1/10.Latihan/script.js"></script>
+    <script src="/components/open-course.js"></script>
+  <script type="text/javascript">
+    const next = document.querySelector(".next");
+    
+    next.addEventListener("click", function(e) {
+      e.preventDefault();
+      localStorage.setItem('sub-1-10', '1');
+      location.href = `${next.getAttribute('href')}`;
+    });
+  </script>
 </body>
 
 </html>

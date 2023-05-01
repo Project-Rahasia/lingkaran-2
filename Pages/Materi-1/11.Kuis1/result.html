@@ -104,7 +104,7 @@
     <script src="/components/navbar.js"></script>
     <script src="/components/list-course.js"></script>
     <script src="/components/list-course-responsive.js"></script>
-
+    <script src="/components/open-course.js"></script>
     <!-- Mathjax -->
     <script>
       MathJax = {
@@ -232,7 +232,7 @@
       next.addEventListener("click", (e) => {
         e.preventDefault();
         removeStorage();
-        localStorage.setItem('sub-3-0', '1');
+        localStorage.setItem('sub-2-0', '1');
         const href = next.getAttribute('href');
         window.location = href;
       });

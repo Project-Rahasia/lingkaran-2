@@ -107,6 +107,14 @@ ul li {
   line-height: 2.2em !important;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+}
+
 .card {
   border: 2px solid;
   border-color: #000 !important;

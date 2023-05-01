@@ -29,67 +29,67 @@ document.querySelector("#nav-bottom").innerHTML = `
           )}" aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body">
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/1.Pendahuluan/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/1.Pendahuluan/index.html" class="list-course-child isDisabled sub-1-0 ${getChapChild(
                 "Materi-1/1.Pendahuluan/index.html"
               )}">Pendahuluan</a>
               </div>
           
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/2.Titik-Pusat/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/2.Titik-Pusat/index.html" class="list-course-child isDisabled sub-1-1 ${getChapChild(
                 "Materi-1/2.Titik-Pusat/index.html"
               )}">Titik Pusat</a>
               </div>
           
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/3.Diameter/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/3.Diameter/index.html" class="list-course-child isDisabled sub-1-2 ${getChapChild(
                 "Materi-1/3.Diameter/index.html"
               )}">Diameter</a>
               </div>
 
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/4.Jari-jari/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/4.Jari-jari/index.html" class="list-course-child isDisabled sub-1-3 ${getChapChild(
                 "Materi-1/4.Jari-jari/index.html"
               )}">Jari - Jari</a>
               </div>
 
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/5.Busur/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/5.Busur/index.html" class="list-course-child isDisabled sub-1-4 ${getChapChild(
                 "Materi-1/5.Busur/index.html"
               )}">Busur</a>
               </div>
           
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/6.Tali-busur/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/6.Tali-busur/index.html" class="list-course-child isDisabled sub-1-5 ${getChapChild(
                 "Materi-1/6.Tali-Busur/index.html"
               )}">Tali Busur</a>
               </div>
               
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/7.Apotema/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/7.Apotema/index.html" class="list-course-child isDisabled sub-1-6 ${getChapChild(
                 "Materi-1/7.Apotema/index.html"
               )}">Apotema</a>
               </div>
 
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/8.Tembereng/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/8.Tembereng/index.html" class="list-course-child isDisabled sub-1-7 ${getChapChild(
                 "Materi-1/8.Tembereng/index.html"
               )}">Tembereng</a>
               </div>
 
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/9.Juring/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/9.Juring/index.html" class="list-course-child isDisabled sub-1-8 ${getChapChild(
                 "Materi-1/9.Juring/index.html"
               )}">Juring</a>
               </div>
               
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-1/10.Latihan/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/10.Latihan/index.html" class="list-course-child isDisabled sub-1-9 ${getChapChild(
                 "Materi-1/10.Latihan/index.html"
               )}">Latihan 1</a>
               </div>
 
               <div class="list-course-menu">
-              <a href="/Pages/Materi-1/11.Kuis1/index.html" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-1/11.Kuis1/index.html" class="list-course-child isDisabled sub-1-10 ${getChapChild(
                 "Materi-1/11.Kuis1/index.html" ||
                   "Materi-1/11.Kuis1/result.html"
               )}">Kuis</a>
@@ -112,31 +112,31 @@ document.querySelector("#nav-bottom").innerHTML = `
           )}" aria-labelledby="panelsStayOpen-headingTwo">
             <div class="accordion-body">
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-2/0/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-2/0/" class="list-course-child isDisabled sub-2-0 ${getChapChild(
                 "Materi-2/0/"
               )}">Pendahuluan</a>
               </div>
 
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-2/1/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-2/1/" class="list-course-child isDisabled sub-2-1 ${getChapChild(
                 "Materi-2/1/"
               )}">Mengukur Keliling Suatu Lingkaran</a>
               </div>
 
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-2/2/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-2/2/" class="list-course-child isDisabled sub-2-2 ${getChapChild(
                 "Materi-2/2/"
               )}">Menemukan Rumus Keliling Lingkaran</a>
               </div>
 
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-2/3/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-2/3/" class="list-course-child isDisabled sub-2-3 ${getChapChild(
                 "Materi-2/3/"
               )}">Latihan</a>
               </div>
 
               <div class="list-course-menu">
-              <a href="/Pages/Materi-2/4/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-2/4/" class="list-course-child isDisabled sub-2-4 ${getChapChild(
                 "Materi-2/4/"
               )}">Kuis</a>
               </div>
@@ -158,25 +158,25 @@ document.querySelector("#nav-bottom").innerHTML = `
           )}" aria-labelledby="panelsStayOpen-headingThree">
             <div class="accordion-body">
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-3/0/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-3/0/" class="list-course-child isDisabled sub-3-0 ${getChapChild(
                 "Materi-3/0/"
               )}">Pendahuluan</a>
               </div>
               
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-3/1/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-3/1/" class="list-course-child isDisabled sub-3-1 ${getChapChild(
                 "Materi-3/1/"
               )}">Menentukan Rumus Luas Lingkaran</a>
               </div>
 
               <div class="list-course-menu mb-3">
-              <a href="/Pages/Materi-3/2/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-3/2/" class="list-course-child isDisabled sub-3-2 ${getChapChild(
                 "Materi-3/2/"
               )}">Latihan</a>
               </div>
 
               <div class="list-course-menu">
-              <a href="/Pages/Materi-3/3/" class="list-course-child ${getChapChild(
+              <a href="/Pages/Materi-3/3/" class="list-course-child isDisabled sub-3-3 ${getChapChild(
                 "Materi-3/3/"
               )}">Kuis</a>
               </div>
@@ -196,8 +196,8 @@ document.querySelector("#nav-bottom").innerHTML = `
             "Latihan"
           )}" aria-labelledby="panelsStayOpen-headingFour">
             <div class="accordion-body">
-              <div class="list-course">
-              <a href="/pages/latihan/" class="list-course-child ${getChapChild(
+              <div class="list-course-menu">
+              <a href="/pages/latihan/" class="list-course-child isDisabled sub-4-0 ${getChapChild(
                 "Latihan/"
               )}">Latihan</a>
               </div>
